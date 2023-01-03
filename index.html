@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="ck__header">
+        <ul class="ck__ul">
+            <li class="ck__li">one</li>
+            <li class="ck__li">two</li>
+            <li class="ck__li">three
+                <div class="ck__dropdown_div">
+                    <h1>hello</h1>
+                </div>
+            </li>
+            <li class="ck__li">four</li>
+            <li class="ck__li">five
+                <div class="ck__dropdown_div">
+                    <div class="ck__flex">
+                        <div class="ck__col">
+                            <ul>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                            </ul>
+                        </div>
+                        <div class="ck__col">
+                            <ul>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                            </ul>
+                        </div>
+                        <div class="ck__col">
+                            <ul>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                                <li>demo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <script>
+
+        window.addEventListener('resize', () => {
+            console.log("check");
+            if (window.innerWidth < 991) {
+                alert('works')
+                document.getElementsByTagName('header')[0].remove()
+            }
+        })
+    </script>
+</body>
+
+</html>
